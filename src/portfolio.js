@@ -7,27 +7,27 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Yong Ming Ngoh | Professional Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "APAC Presales Solution Manager and First-Class Mechanical Engineer specializing in warehouse automation and 3D industrial simulations.",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Yong Ming Ngoh Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "https://voruki.github.io/",
   },
 };
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  title: "Yong Ming Ngoh",
+  logo_name: "YongMing",
+  nickname: "Yong Ming",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "APAC Presales Solution Manager at Libiao Robotics & First-Class Mechanical Engineer (3.9 CGPA). I architect bespoke automation for SEAO, delivering 40-60% efficiency gains through T-Sort & AirRob systems.",
   resumeLink:
-    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
+    "https://drive.google.com/file/d/1Wl2DxDzZ2yQiQ_c0S2T6LpCYms2869VN/view",
+  portfolio_repository: "https://github.com/Voruki/Portfolio",
+  githubProfile: "https://github.com/Voruki",
 };
 
 const socialMediaLinks = [
