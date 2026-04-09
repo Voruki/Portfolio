@@ -17,7 +17,9 @@ class Contact extends Component {
     const theme = this.props.theme;
     return (
       <div className="contact-main">
-        <Header theme={theme} />
+        {/* MECHANICAL FIX: Added onToggle here to complete the circuit */}
+        <Header theme={theme} onToggle={this.props.onToggle} />
+        
         <div className="basic-contact">
           <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
@@ -62,7 +64,6 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
-                {/* MECHANICAL OVERRIDE: Replacing AddressImg with photo9.png */}
                 <img
                   src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
                   alt="Location Context"
