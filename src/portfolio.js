@@ -63,9 +63,9 @@ const skills = {
       title: "Intralogistics Automation",
       fileName: "image1", // Updated to your custom PNG
       skills: [
-        "⚡ Spearheading the first AirRob & T-Sort implementations across Thailand and Malaysia",
-        "⚡ Architecting bespoke solutions delivering the average of 40-60% operational efficiency gains",
-        "⚡ Leading technical lifecycles from site audits to finalized system design architecture",
+        "⚙️ Spearheading the first AirRob & T-Sort implementations across Thailand and Malaysia",
+        "⚙️ Architecting bespoke solutions delivering the average of 40-60% operational efficiency gains",
+        "⚙️ Leading technical lifecycles from site audits to finalized system design architecture",
       ],
       softwareSkills: [
         {
@@ -96,9 +96,9 @@ const skills = {
       title: "3D Design & Simulation",
       fileName: "image2", // Updated to your custom PNG
       skills: [
-        "⚡ Creating high-fidelity 3D design simulations using Blender and SketchUp",
-        "⚡ Producing cinematic renderings to secure stakeholder buy-in for large-scale projects",
-        "⚡ Developing immersive project visualizations for complex automation transitions",
+        "📐 Creating high-fidelity 3D design simulations using Blender and SketchUp",
+        "📐 Producing cinematic renderings to secure stakeholder buy-in for large-scale projects",
+        "📐 Developing immersive project visualizations for complex automation transitions",
       ],
       softwareSkills: [
         {
@@ -128,9 +128,9 @@ const skills = {
       title: "Strategy & Data Leadership",
       fileName: "image3", // Updated to your custom PNG
       skills: [
-        "⚡ Managing multi-million Ringgit projects from conceptualization to construction",
-        "⚡ Leveraging stock data analysis to reduce facility processing time by 25%",
-        "⚡ Bridging global R&D and regional sales to ensure 100% technical feasibility",
+        "📦 Managing multi-million Ringgit projects from conceptualization to construction",
+        "📦 Leveraging stock data analysis to reduce facility processing time by 25%",
+        "📦 Bridging global R&D and regional sales to ensure 100% technical feasibility",
       ],
       softwareSkills: [
         {
@@ -167,9 +167,9 @@ const skills = {
       title: "Industrial Systems Engineering",
       fileName: "image4", // Updated to your custom PNG
       skills: [
-        "⚡ Overseeing technical governance from conceptual BOM to pre-execution infrastructure",
-        "⚡ Finalizing Network Topology, Electrical Diagrams, and Technical Agreements for zero-error handovers",
-        "⚡ Conducting high-frequency site audits to engineer optimal warehouse design modifications",
+        "🤖 Overseeing technical governance from conceptual BOM to pre-execution infrastructure",
+        "🤖 Finalizing Network Topology, Electrical Diagrams, and Technical Agreements for zero-error handovers",
+        "🤖 Conducting high-frequency site audits to engineer optimal warehouse design modifications",
       ],
       softwareSkills: [
         {
