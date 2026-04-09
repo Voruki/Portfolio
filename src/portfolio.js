@@ -77,7 +77,7 @@ const skills = {
         },
         {
           skillName: "ZWCAD",
-          fontAwesomeClassname: "simple-icons:keras",
+          fontAwesomeClassname: "simple-icons:zeromq",
           style: {
             backgroundColor: "white",
             color: "#D00000",
@@ -85,7 +85,7 @@ const skills = {
         },
         {
           skillName: "Internal Simulation Tools",
-          fontAwesomeClassname: "simple-icons:ansys",
+          fontAwesomeClassname: "simple-icons:comsol",
           style: {
             backgroundColor: "transparent",
           },
