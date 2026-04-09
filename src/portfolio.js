@@ -26,43 +26,34 @@ const greeting = {
     "APAC Presales Solution Manager at Libiao Robotics & First-Class Mechanical Engineer (3.9 CGPA). I architect bespoke automation for SEAO, delivering 40-60% efficiency gains through T-Sort & AirRob systems.",
   resumeLink:
     "https://drive.google.com/file/d/1Wl2DxDzZ2yQiQ_c0S2T6LpCYms2869VN/view",
-  portfolio_repository: "https://github.com/Voruki/Portfolio",
+  portfolio_repository: "https://github.com/Voruki/voruki.github.io",
   githubProfile: "https://github.com/Voruki",
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
-
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/ngohyongming/",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5",
   },
   {
     name: "Github",
     link: "https://github.com/Voruki",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    fontAwesomeIcon: "fa-github",
+    backgroundColor: "#181717",
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/voruki_studio/",
-    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+    fontAwesomeIcon: "fa-instagram",
+    backgroundColor: "#E4405F",
   },
   {
     name: "Gmail",
     link: "mailto:yongming914@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+    fontAwesomeIcon: "fa-google",
+    backgroundColor: "#D14836",
   }
 ];
 
@@ -262,7 +253,7 @@ const certifications = {
       subtitle: "Google Professional Certificate",
       logo_path: "google_logo.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/professional-cert/EW3WGO0X3KHF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
+        "https://www.coursera.org/account/accomplishments/professional-cert/EW3WGO0X3KHF",
       alt_name: "Google",
       color_code: "#4285F499",
     },
@@ -298,7 +289,7 @@ const certifications = {
       subtitle: "Harvard University",
       logo_path: "harvard_logo.png",
       certificate_link:
-        "https://certificates.cs50.io/5858ed45-fe4c-4932-9edb-afc616c0ca4c.png?size=letter",
+        "https://certificates.cs50.io/5858ed45-fe4c-4932-9edb-afc616c0ca4c.png",
       alt_name: "Harvard University",
       color_code: "#A51C30",
     },
@@ -361,6 +352,11 @@ const projectsHeader = {
   avatar_image_path: "projects_image.svg",
 };
 
+// Required for the UI to render correctly
+const projects = {
+  data: [],
+};
+
 const publicationsHeader = {
   title: "Special Projects",
   description: "A showcase of specialized warehouse design consultations and community-driven engineering initiatives, leveraging high-fidelity 3D simulations and technical throughput modeling.",
@@ -417,7 +413,7 @@ const contactPageData = {
     postalCode: "",
     streetAddress: "",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://www.google.com/maps/place/Kuala+Lumpur",
+    location_map_link: "https://www.google.com/maps/search/Kuala+Lumpur+Malaysia",
   },
   phoneSection: {
     title: "Contact Number",
