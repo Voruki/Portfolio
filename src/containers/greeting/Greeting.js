@@ -4,7 +4,8 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FeelingProud from "./FeelingProud";
+// We removed FeelingProud as we are now using a real photo of your work
+// import FeelingProud from "./FeelingProud";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -38,18 +39,20 @@ export default function Greeting(props) {
                   className="portfolio-repo-btn"
                 />
               </div>
-              {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <img
-							alt="saad sitting on table"
-							src={require("../../assets/images/feelingProud.svg")}
-						></img> */}
-            <FeelingProud theme={theme} />
+            {/* The Precision Override: We are now displaying 'vorky.png' */}
+            <img
+              alt="Yong Ming Ngoh - APAC Presales Solution Manager"
+              src={require("../../assets/images/vorky.png")}
+              style={{
+                width: "100%",
+                height: "auto",
+                borderRadius: "10px", // Optional: Gives the photo soft corners
+                boxShadow: `0px 10px 30px ${theme.imageHighlight}44` // Adds a glow using your custom theme color
+              }}
+            />
           </div>
         </div>
       </div>
