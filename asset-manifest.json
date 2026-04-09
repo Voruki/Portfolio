@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.fbfd2f66.chunk.css",
-    "main.js": "/static/js/main.e550d51c.chunk.js",
-    "main.js.map": "/static/js/main.e550d51c.chunk.js.map",
+    "main.js": "/static/js/main.ae48223a.chunk.js",
+    "main.js.map": "/static/js/main.ae48223a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.2781e2dc.js.map",
-    "static/js/2.80b506be.chunk.js": "/static/js/2.80b506be.chunk.js",
-    "static/js/2.80b506be.chunk.js.map": "/static/js/2.80b506be.chunk.js.map",
+    "static/js/2.481629f4.chunk.js": "/static/js/2.481629f4.chunk.js",
+    "static/js/2.481629f4.chunk.js.map": "/static/js/2.481629f4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.54e53062fe87bca1a82fc1571f14c5c4.js": "/precache-manifest.54e53062fe87bca1a82fc1571f14c5c4.js",
+    "precache-manifest.9c57b568c02b53238bb6a18bda48b0f3.js": "/precache-manifest.9c57b568c02b53238bb6a18bda48b0f3.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.fbfd2f66.chunk.css.map": "/static/css/main.fbfd2f66.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/Ashutosh_Hathidara_Resume_ML.pdf": "/static/media/Ashutosh_Hathidara_Resume_ML.bad37978.pdf",
     "static/media/address_image.svg": "/static/media/address_image.16559172.svg",
+    "static/media/android_logo.png": "/static/media/android_logo.fc733d6e.png",
     "static/media/animated_ashutosh.png": "/static/media/animated_ashutosh.eaf02c2d.png",
     "static/media/animated_logo.svg": "/static/media/animated_logo.dcd6dee2.svg",
     "static/media/blogs_image.svg": "/static/media/blogs_image.058eca4c.svg",
@@ -33,6 +34,7 @@
     "static/media/github_logo.png": "/static/media/github_logo.6eeb2e81.png",
     "static/media/googleAssistant.jpg": "/static/media/googleAssistant.0c8a4c11.jpg",
     "static/media/googleAssistant.svg": "/static/media/googleAssistant.a6addc3f.svg",
+    "static/media/harvard_logo.png": "/static/media/harvard_logo.2180cdba.png",
     "static/media/ibm_logo.png": "/static/media/ibm_logo.d3fccbe1.png",
     "static/media/iiitk_logo.png": "/static/media/iiitk_logo.571a8584.png",
     "static/media/intel_logo.jpg": "/static/media/intel_logo.29152cf7.jpg",
@@ -50,12 +52,13 @@
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.6ac91b16.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.3fa54242.svg",
     "static/media/tiktok_logo.png": "/static/media/tiktok_logo.0993e324.png",
+    "static/media/ucsi_logo.png": "/static/media/ucsi_logo.0529e5f7.png",
     "static/media/ui_ux_design.svg": "/static/media/ui_ux_design.d6363089.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2781e2dc.js",
-    "static/js/2.80b506be.chunk.js",
+    "static/js/2.481629f4.chunk.js",
     "static/css/main.fbfd2f66.chunk.css",
-    "static/js/main.e550d51c.chunk.js"
+    "static/js/main.ae48223a.chunk.js"
   ]
 }
