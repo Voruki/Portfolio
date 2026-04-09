@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.fbfd2f66.chunk.css",
-    "main.js": "/static/js/main.e566d996.chunk.js",
-    "main.js.map": "/static/js/main.e566d996.chunk.js.map",
+    "main.js": "/static/js/main.ed7b2dd4.chunk.js",
+    "main.js.map": "/static/js/main.ed7b2dd4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.2781e2dc.js.map",
-    "static/js/2.3b7b8595.chunk.js": "/static/js/2.3b7b8595.chunk.js",
-    "static/js/2.3b7b8595.chunk.js.map": "/static/js/2.3b7b8595.chunk.js.map",
+    "static/js/2.ac71d6dc.chunk.js": "/static/js/2.ac71d6dc.chunk.js",
+    "static/js/2.ac71d6dc.chunk.js.map": "/static/js/2.ac71d6dc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f9d1139204b994a2d0166e3a04dbe4f3.js": "/precache-manifest.f9d1139204b994a2d0166e3a04dbe4f3.js",
+    "precache-manifest.d430ba7a42286a39670487cc749484e3.js": "/precache-manifest.d430ba7a42286a39670487cc749484e3.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.fbfd2f66.chunk.css.map": "/static/css/main.fbfd2f66.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
@@ -36,7 +36,6 @@
     "static/media/googleAssistant.jpg": "/static/media/googleAssistant.0c8a4c11.jpg",
     "static/media/googleAssistant.svg": "/static/media/googleAssistant.a6addc3f.svg",
     "static/media/harvard_logo.png": "/static/media/harvard_logo.2180cdba.png",
-    "static/media/ibm_logo.png": "/static/media/ibm_logo.d3fccbe1.png",
     "static/media/iem_logo.png": "/static/media/iem_logo.836f9f24.png",
     "static/media/iiitk_logo.png": "/static/media/iiitk_logo.571a8584.png",
     "static/media/image1.png": "/static/media/image1.5cbdce0a.png",
@@ -67,8 +66,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2781e2dc.js",
-    "static/js/2.3b7b8595.chunk.js",
+    "static/js/2.ac71d6dc.chunk.js",
     "static/css/main.fbfd2f66.chunk.css",
-    "static/js/main.e566d996.chunk.js"
+    "static/js/main.ed7b2dd4.chunk.js"
   ]
 }
