@@ -204,6 +204,7 @@ const competitiveSites = {
     {
       siteName: "LeetCode",
       iconifyClassname: "simple-icons:leetcode",
+      logo_path: "leetcode_logo.png", // Full PNG alignment
       style: {
         color: "#F79F1B",
       },
@@ -212,7 +213,7 @@ const competitiveSites = {
     {
       siteName: "IEM Malaysia",
       iconifyClassname: "simple-icons:engineering",
-      logo_path: "iem_logo.png", // Added for you
+      logo_path: "iem_logo.png",
       style: {
         color: "#000000",
       },
@@ -221,7 +222,7 @@ const competitiveSites = {
     {
       siteName: "CIDB Malaysia",
       iconifyClassname: "simple-icons:construction",
-      logo_path: "cidb_logo.png", // Added for you
+      logo_path: "cidb_logo.png",
       style: {
         color: "#009B4D",
       },
