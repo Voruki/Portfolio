@@ -204,7 +204,7 @@ const competitiveSites = {
     {
       siteName: "LeetCode",
       iconifyClassname: "simple-icons:leetcode",
-      logo_path: "leetcode_logo.png", // Full PNG alignment
+      logo_path: "leetcode_logo.png",
       style: {
         color: "#F79F1B",
       },
@@ -314,7 +314,7 @@ const experience = {
   subtitle: "Robotics, Automation & Solutions Design",
   description:
     "I manage the end-to-end technical lifecycle for major intralogistics projects across the APAC region, delivering data-driven efficiency for global clients.",
-  header_image_path: "experience.svg",
+  header_image_path: "image7.png", // UPDATED: Changed to image7.png
   sections: [
     {
       title: "Work",
