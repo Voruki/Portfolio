@@ -1,17 +1,17 @@
 // theme.js
 
 export const yongMingTheme = {
-  body: "#F0F4FF",          // Light Blue-Grey Background
-  text: "#1A237E",          // Deep Indigo Text
+  body: "#F0F4FF",
+  text: "#1A237E",
   expTxtColor: "#000a12",
-  highlight: "#E1D5FF",     // Soft Purple Highlight
+  highlight: "#E1D5FF",
   dark: "#00072D",
-  secondaryText: "#5C6BC0", // Muted Blue
-  imageHighlight: "#7E57C2",// Vibrant Purple
+  secondaryText: "#5C6BC0",
+  imageHighlight: "#7E57C2",
   compImgHighlight: "#E6E6E6",
-  jacketColor: "#3F51B5",   // Indigo Jacket
-  headerColor: "#7E57C277", // Translucent Purple Header
-  splashBg: "#1A237E",      // Deep Indigo Splash (Matches your signature)
+  jacketColor: "#3F51B5",
+  headerColor: "#7E57C277",
+  splashBg: "#1A237E",
 };
 
 export const blueTheme = {
@@ -131,19 +131,3 @@ export const tealTheme = {
   text: "#084c61",
   expTxtColor: "#000a12",
   highlight: "#9BEED8",
-  dark: "#031E26",
-  secondaryText: "#528190",
-  imageHighlight: "#07beb8",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#56a3a6",
-  headerColor: "#07beb877",
-  splashBg: "#084c61",
-};
-
-export const orangeTheme = {
-  body: "#FFF0EA",
-  text: "#99401F",
-  expTxtColor: "#000a12",
-  highlight: "#FFB59A",
-  dark: "#33150A",
-  secondaryText: "#CC552A",
