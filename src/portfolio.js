@@ -436,6 +436,7 @@ export {
   certifications,
   experience,
   projectsHeader,
+  projects,
   publicationsHeader,
   publications,
   contactPageData,
