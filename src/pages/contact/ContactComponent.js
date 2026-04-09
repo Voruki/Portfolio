@@ -4,7 +4,6 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
@@ -60,12 +59,20 @@ class Contact extends Component {
             </div>
           </Fade>
 
-          {/* Blog Section and BlogsImg have been purged from here */}
-
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
-                <AddressImg theme={theme} />
+                {/* MECHANICAL OVERRIDE: Replacing AddressImg with photo9.png */}
+                <img
+                  src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
+                  alt="Location Context"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    borderRadius: "10px",
+                    objectFit: "contain",
+                  }}
+                />
               </div>
               <div className="address-heading-text-div">
                 <h1
