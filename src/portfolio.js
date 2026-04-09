@@ -61,7 +61,7 @@ const skills = {
   data: [
     {
       title: "Intralogistics Automation",
-      fileName: "image1", // Updated to your custom PNG
+      fileName: "image1", 
       skills: [
         "⚙️ Spearheading the first AirRob & T-Sort implementations across Thailand and Malaysia",
         "⚙️ Architecting bespoke solutions delivering the average of 40-60% operational efficiency gains",
@@ -94,7 +94,7 @@ const skills = {
     },
     {
       title: "3D Design & Simulation",
-      fileName: "image2", // Updated to your custom PNG
+      fileName: "image2", 
       skills: [
         "📐 Creating high-fidelity 3D design simulations using Blender and SketchUp",
         "📐 Producing cinematic renderings to secure stakeholder buy-in for large-scale projects",
@@ -126,7 +126,7 @@ const skills = {
     },
     {
       title: "Strategy & Data Leadership",
-      fileName: "image3", // Updated to your custom PNG
+      fileName: "image3", 
       skills: [
         "📦 Managing multi-million Ringgit projects from conceptualization to construction",
         "📦 Leveraging stock data analysis to reduce facility processing time by 25%",
@@ -165,7 +165,7 @@ const skills = {
     },
     {
       title: "Industrial Systems Engineering",
-      fileName: "image4", // Updated to your custom PNG
+      fileName: "image4", 
       skills: [
         "🤖 Overseeing technical governance from conceptual BOM to pre-execution infrastructure",
         "🤖 Finalizing Network Topology, Electrical Diagrams, and Technical Agreements for zero-error handovers",
@@ -212,6 +212,7 @@ const competitiveSites = {
     {
       siteName: "IEM Malaysia",
       iconifyClassname: "simple-icons:engineering",
+      logo_path: "iem_logo.png", // Added for you
       style: {
         color: "#000000",
       },
@@ -220,6 +221,7 @@ const competitiveSites = {
     {
       siteName: "CIDB Malaysia",
       iconifyClassname: "simple-icons:construction",
+      logo_path: "cidb_logo.png", // Added for you
       style: {
         color: "#009B4D",
       },
