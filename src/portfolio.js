@@ -284,7 +284,7 @@ const certifications = {
       certificate_link:
         "https://www.coursera.org/account/accomplishments/professional-cert/OOQRCNJMV7W1",
       alt_name: "IBM",
-      color_code: "#052FAD99",
+      color_code: "#F5F7FA99",
     },
     {
       title: "CS50 Introduction to Programming with Python",
