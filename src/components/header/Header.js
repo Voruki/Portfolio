@@ -39,7 +39,6 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/home"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
@@ -51,7 +50,6 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/education"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
@@ -63,7 +61,6 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/experience"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
@@ -75,7 +72,6 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/projects"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
@@ -87,7 +83,6 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/opensource"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
@@ -99,7 +94,6 @@ class Header extends Component {
               <li>
                 <NavLink
                   to="/contact"
-                  tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
