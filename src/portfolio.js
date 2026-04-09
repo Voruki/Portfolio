@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: true,
 };
 
 //SEO Related settings
@@ -71,24 +71,17 @@ const skills = {
         {
           skillName: "AutoCAD",
           fontAwesomeClassname: "simple-icons:autodesk",
-          style: {
-            backgroundColor: "transparent",
-          },
+          style: { backgroundColor: "transparent" },
         },
         {
           skillName: "ZWCAD",
           fontAwesomeClassname: "simple-icons:zig",
-          style: {
-            backgroundColor: "transparent",
-            color: "#D00000",
-          },
+          style: { backgroundColor: "transparent", color: "#D00000" },
         },
         {
           skillName: "Internal Simulation Tools",
           fontAwesomeClassname: "simple-icons:analogue",
-          style: {
-            backgroundColor: "transparent",
-          },
+          style: { backgroundColor: "transparent" },
         }
       ],
     },
@@ -104,23 +97,17 @@ const skills = {
         {
           skillName: "Blender",
           fontAwesomeClassname: "simple-icons:blender",
-          style: {
-            color: "#F5792A",
-          },
+          style: { color: "#F5792A" },
         },
         {
           skillName: "SketchUp",
           fontAwesomeClassname: "simple-icons:sketchup",
-          style: {
-            color: "#005F9E",
-          },
+          style: { color: "#005F9E" },
         },
         {
           skillName: "DaVinci Resolve",
           fontAwesomeClassname: "simple-icons:davinciresolve",
-          style: {
-            color: "#1D2A47",
-          },
+          style: { color: "#1D2A47" },
         }
       ],
     },
@@ -136,30 +123,22 @@ const skills = {
         {
           skillName: "Microsoft Project",
           fontAwesomeClassname: "simple-icons:microsoftproject",
-          style: {
-            color: "#31752f",
-          },
+          style: { color: "#31752f" },
         },
         {
           skillName: "Google Analytics",
           fontAwesomeClassname: "simple-icons:googleanalytics",
-          style: {
-            color: "#E37400",
-          },
+          style: { color: "#E37400" },
         },
         {
           skillName: "Python",
           fontAwesomeClassname: "logos-python",
-          style: {
-            color: "transparent",
-          },
+          style: { color: "transparent" },
         },
         {
           skillName: "Office 365",
           fontAwesomeClassname: "simple-icons:microsoftoffice",
-          style: {
-            color: "#D83B01",
-          },
+          style: { color: "#D83B01" },
         },
       ],
     },
@@ -175,57 +154,44 @@ const skills = {
         {
           skillName: "Mechanical Design",
           fontAwesomeClassname: "simple-icons:blueprint",
-          style: {
-            color: "#000000",
-          },
+          style: { color: "#000000" },
         },
         {
           skillName: "Simulation Tools",
           fontAwesomeClassname: "simple-icons:analogue",
-          style: {
-            color: "#61DAFB",
-          },
+          style: { color: "#61DAFB" },
         },
         {
           skillName: "Infrastructure",
           fontAwesomeClassname: "simple-icons:serverfault",
-          style: {
-            color: "#FF9900",
-          },
+          style: { color: "#FF9900" },
         },
       ],
     },
   ],
 };
 
-// Education Page
 const competitiveSites = {
   competitiveSites: [
     {
       siteName: "LeetCode",
       iconifyClassname: "simple-icons:leetcode",
       logo_path: "leetcode_logo.png",
-      style: {
-        color: "#F79F1B",
-      },
+      style: { color: "#F79F1B" },
       profileLink: "https://leetcode.com/Voruki/",
     },
     {
       siteName: "IEM Malaysia",
       iconifyClassname: "simple-icons:engineering",
       logo_path: "iem_logo.png",
-      style: {
-        color: "#000000",
-      },
+      style: { color: "#000000" },
       profileLink: "https://www.myiem.org.my/",
     },
     {
       siteName: "CIDB Malaysia",
       iconifyClassname: "simple-icons:construction",
       logo_path: "cidb_logo.png",
-      style: {
-        color: "#009B4D",
-      },
+      style: { color: "#009B4D" },
       profileLink: "https://www.cidb.gov.my",
     },
   ],
@@ -255,8 +221,7 @@ const certifications = {
       title: "Google Data Analytics",
       subtitle: "Google Professional Certificate",
       logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/professional-cert/EW3WGO0X3KHF",
+      certificate_link: "https://www.coursera.org/account/accomplishments/professional-cert/EW3WGO0X3KHF",
       alt_name: "Google",
       color_code: "#4285F499",
     },
@@ -264,8 +229,7 @@ const certifications = {
       title: "Google Project Management",
       subtitle: "Google Professional Certificate",
       logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/professional-cert/KHS5MQHILXM2",
+      certificate_link: "https://www.coursera.org/account/accomplishments/professional-cert/KHS5MQHILXM2",
       alt_name: "Google",
       color_code: "#4285F499",
     },
@@ -273,8 +237,7 @@ const certifications = {
       title: "Microsoft Project Management",
       subtitle: "Microsoft Professional Certificate",
       logo_path: "microsoft_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/professional-cert/GSAW1DOXXU7Y",
+      certificate_link: "https://www.coursera.org/account/accomplishments/professional-cert/GSAW1DOXXU7Y",
       alt_name: "Microsoft",
       color_code: "#00A4EF99",
     },
@@ -282,8 +245,7 @@ const certifications = {
       title: "IBM Project Manager",
       subtitle: "IBM Professional Certificate",
       logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/professional-cert/OOQRCNJMV7W1",
+      certificate_link: "https://www.coursera.org/account/accomplishments/professional-cert/OOQRCNJMV7W1",
       alt_name: "IBM",
       color_code: "#F5F7FA99",
     },
@@ -291,8 +253,7 @@ const certifications = {
       title: "CS50 Introduction to Programming with Python",
       subtitle: "Harvard University",
       logo_path: "harvard_logo.png",
-      certificate_link:
-        "https://certificates.cs50.io/5858ed45-fe4c-4932-9edb-afc616c0ca4c.png",
+      certificate_link: "https://certificates.cs50.io/5858ed45-fe4c-4932-9edb-afc616c0ca4c.png",
       alt_name: "Harvard University",
       color_code: "#A51C30",
     },
@@ -300,21 +261,19 @@ const certifications = {
       title: "Android Certified Application Developer",
       subtitle: "Android ATC",
       logo_path: "android_logo.png",
-      certificate_link:
-        "https://androidatc.com/_transcript.php",
+      certificate_link: "https://androidatc.com/_transcript.php",
       alt_name: "Android ATC",
       color_code: "#3DDC8499",
     },
   ],
 };
 
-// Experience Page
 const experience = {
   title: "Experience",
   subtitle: "Robotics, Automation & Solutions Design",
   description:
     "I manage the end-to-end technical lifecycle for major intralogistics projects across the APAC region, delivering data-driven efficiency for global clients.",
-  header_image_path: "image7.png", // UPDATED: Changed to image7.png
+  header_image_path: "image7.png", 
   sections: [
     {
       title: "Work",
@@ -327,8 +286,7 @@ const experience = {
           logo_path: "libiao_logo.png",
           duration: "Aug 2025 - Present",
           location: "Singapore",
-          description:
-            "Leading automation design & solution deployments in Malaysia, Singapore, Thailand, Vietnam, Indonesia, Australia and New Zealand.",
+          description: "Leading automation design & solution deployments in Malaysia, Singapore, Thailand, Vietnam, Indonesia, Australia and New Zealand.",
           color: "#EE2C2C",
         },
         {
@@ -338,8 +296,7 @@ const experience = {
           logo_path: "lsi_logo.png",
           duration: "Sep 2021 - Aug 2025",
           location: "Kuala Lumpur, Malaysia",
-          description:
-            "Integrated ASRS and AutoStore systems, achieving a 30% improvement in space utilization for major DC projects",
+          description: "Integrated ASRS and AutoStore systems, achieving a 30% improvement in space utilization for major DC projects",
           color: "#0879bf",
         },
       ],
@@ -347,15 +304,14 @@ const experience = {
   ],
 };
 
-// Projects Page
 const projectsHeader = {
   title: "Industrial Projects",
   description:
     "Engineering high-efficiency automation systems for the APAC region. My work focuses on spearheading the technical lifecycle of intralogistics solutions—from conceptual site audits to the deployment of robotic systems like AirRob and T-Sort.",
-  avatar_image_path: "projects_image.svg",
+  avatar_image_path: "image8.png",
 };
 
-// Required for the UI to render correctly
+// CLEANUP: Setting this to empty to remove generic MDP/CNN projects
 const projects = {
   data: [],
 };
@@ -392,7 +348,6 @@ const publications = {
   ],
 };
 
-// Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
@@ -402,8 +357,7 @@ const contactPageData = {
   },
   blogSection: {
     title: "",
-    subtitle:
-      "",
+    subtitle: "",
     link: "",
     avatar_image_path: "",
   },
