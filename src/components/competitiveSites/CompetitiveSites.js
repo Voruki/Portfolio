@@ -24,28 +24,25 @@ class CompetitiveSites extends React.Component {
                     href={logo.profileLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ display: "flex", alignItems: "center" }}
+                    style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
                   >
                     {logo.logo_path ? (
                       <img
                         src={require(`../../assets/images/${logo.logo_path}`)}
                         alt={logo.siteName}
                         style={{
-                          width: "55px",  /* Increased size to match LeetCode weight */
-                          height: "55px",
+                          width: "50px",      /* Standardized size */
+                          height: "50px",
                           borderRadius: "50%",
                           objectFit: "contain",
-                          padding: "5px"  /* Adds internal "breathing room" */
+                          padding: "4px"      /* Consistent internal margin */
                         }}
                       />
                     ) : (
                       <span
                         className="iconify"
                         data-icon={logo.iconifyClassname}
-                        style={{ 
-                          ...logo.style, 
-                          fontSize: "45px" /* Ensures LeetCode stays balanced */
-                        }}
+                        style={logo.style}
                         data-inline="false"
                       ></span>
                     )}
