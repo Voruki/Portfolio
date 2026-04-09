@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
-import ToggleSwitch from "../toggleSwitch/ToggleSwitch"; // Import our new component
+import ToggleSwitch from "../toggleSwitch/ToggleSwitch";
 
 class Header extends Component {
   render() {
@@ -14,17 +14,25 @@ class Header extends Component {
         <SeoHeader />
         <div>
           <header className="header">
-            <NavLink to="/home" tag={Link} className="logo">
-              <span style={{ color: theme.text }}> &lt;</span>
-              <span className="logo-name" style={{ color: theme.text }}>
-                {greeting.logo_name}
-              </span>
-              <span style={{ color: theme.text }}>/&gt;</span>
-            </NavLink>
+            {/* NEW WRAPPER: This groups the signature and the switch together on the left */}
+            <div className="logo-and-toggle">
+              <NavLink to="/home" tag={Link} className="logo">
+                <span style={{ color: theme.text }}> &lt;</span>
+                <span className="logo-name" style={{ color: theme.text }}>
+                  {greeting.logo_name}
+                </span>
+                <span style={{ color: theme.text }}>/&gt;</span>
+              </NavLink>
+              
+              {/* Toggle is now outside the UL menu and next to the signature */}
+              <ToggleSwitch theme={theme} onToggle={this.props.onToggle} />
+            </div>
+
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>
             </label>
+            
             <ul className="menu" style={{ backgroundColor: theme.body }}>
               <li>
                 <NavLink
@@ -70,10 +78,6 @@ class Header extends Component {
                 >
                   Contact Me
                 </NavLink>
-              </li>
-              {/* This places the Toggle at the very end of the top bar list */}
-              <li className="toggle-switch-nav">
-                <ToggleSwitch theme={theme} onToggle={this.props.onToggle} />
               </li>
             </ul>
           </header>
