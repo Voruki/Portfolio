@@ -4,8 +4,8 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-// We removed FeelingProud as we are now using a real photo of your work
-// import FeelingProud from "./FeelingProud";
+
+/* Note: FeelingProud is removed to prioritize your custom vorky.png */
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -42,15 +42,16 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* The Precision Override: We are now displaying 'vorky.png' */}
             <img
-              alt="Yong Ming Ngoh - APAC Presales Solution Manager"
+              alt="Yong Ming Ngoh"
               src={require("../../assets/images/vorky.png")}
               style={{
                 width: "100%",
                 height: "auto",
-                borderRadius: "10px", // Optional: Gives the photo soft corners
-                boxShadow: `0px 10px 30px ${theme.imageHighlight}44` // Adds a glow using your custom theme color
+                backgroundColor: "transparent", // Ensures no background color shows
+                border: "none",                 // Removes any default borders
+                /* If you want to force extra rounding via code, uncomment the line below */
+                // borderRadius: "20px", 
               }}
             />
           </div>
