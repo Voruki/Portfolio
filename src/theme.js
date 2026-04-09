@@ -147,30 +147,3 @@ export const orangeTheme = {
   highlight: "#FFB59A",
   dark: "#33150A",
   secondaryText: "#CC552A",
-  imageHighlight: "#FF6B35",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#d7263d",
-  headerColor: "#FF6B3577",
-  splashBg: "#99401F",
-};
-
-export const yellowTheme = {
-  body: "#FFD95D",
-  text: "#5f4339",
-  expTxtColor: "#000a12",
-  highlight: "#ffff73",
-  dark: "#8d6e63",
-  secondaryText: "#5f4339",
-  imageHighlight: "#ffea3d",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#4e342e",
-  headerColor: "#FFEA3D",
-  splashBg: "#5f4339",
-};
-
-export const materialDarkTheme = {
-  body: "#263238",
-  text: "#aeaeae",
-  expTxtColor: "#000a12",
-  highlight: "#4f5b62",
-  dark: "#000a12
