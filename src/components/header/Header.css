@@ -70,7 +70,8 @@
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  /* MECHANICAL FIX: Uses inherit so JS can control the color */
+  background: inherit; 
   display: block;
   height: 2px;
   position: relative;
@@ -80,7 +81,8 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  /* MECHANICAL FIX: Both top and bottom lines now follow the center line color */
+  background: inherit;
   content: "";
   display: block;
   height: 100%;
