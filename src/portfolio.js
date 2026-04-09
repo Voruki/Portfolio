@@ -61,7 +61,7 @@ const skills = {
   data: [
     {
       title: "Intralogistics Automation",
-      fileName: "CloudInfraImg",
+      fileName: "image1", // Updated to your custom PNG
       skills: [
         "⚡ Spearheading the first AirRob & T-Sort implementations across Thailand and Malaysia",
         "⚡ Architecting bespoke solutions delivering the average of 40-60% operational efficiency gains",
@@ -94,7 +94,7 @@ const skills = {
     },
     {
       title: "3D Design & Simulation",
-      fileName: "DesignImg",
+      fileName: "image2", // Updated to your custom PNG
       skills: [
         "⚡ Creating high-fidelity 3D design simulations using Blender and SketchUp",
         "⚡ Producing cinematic renderings to secure stakeholder buy-in for large-scale projects",
@@ -126,7 +126,7 @@ const skills = {
     },
     {
       title: "Strategy & Data Leadership",
-      fileName: "DataScienceImg",
+      fileName: "image3", // Updated to your custom PNG
       skills: [
         "⚡ Managing multi-million Ringgit projects from conceptualization to construction",
         "⚡ Leveraging stock data analysis to reduce facility processing time by 25%",
@@ -165,7 +165,7 @@ const skills = {
     },
     {
       title: "Industrial Systems Engineering",
-      fileName: "FullStackImg",
+      fileName: "image4", // Updated to your custom PNG
       skills: [
         "⚡ Overseeing technical governance from conceptual BOM to pre-execution infrastructure",
         "⚡ Finalizing Network Topology, Electrical Diagrams, and Technical Agreements for zero-error handovers",
@@ -393,7 +393,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "your_profile_photo.png",
+    profile_image_path: "vorky.png", // Updated to match your custom photo
     description:
       "I am open to technical discussions regarding warehouse automation, intralogistics strategy, and 3D industrial simulations. Connect with me on LinkedIn or reach out via email for regional project collaborations.",
   },
