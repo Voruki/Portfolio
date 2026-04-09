@@ -1,4 +1,19 @@
 // theme.js
+
+export const yongMingTheme = {
+  body: "#F0F4FF",          // Light Blue-Grey Background
+  text: "#1A237E",          // Deep Indigo Text
+  expTxtColor: "#000a12",
+  highlight: "#E1D5FF",     // Soft Purple Highlight
+  dark: "#00072D",
+  secondaryText: "#5C6BC0", // Muted Blue
+  imageHighlight: "#7E57C2",// Vibrant Purple
+  compImgHighlight: "#E6E6E6",
+  jacketColor: "#3F51B5",   // Indigo Jacket
+  headerColor: "#7E57C277", // Translucent Purple Header
+  splashBg: "#1A237E",      // Deep Indigo Splash (Matches your signature)
+};
+
 export const blueTheme = {
   body: "#EDF9FE",
   text: "#001C55",
@@ -158,41 +173,4 @@ export const materialDarkTheme = {
   text: "#aeaeae",
   expTxtColor: "#000a12",
   highlight: "#4f5b62",
-  dark: "#000a12",
-  secondaryText: "#aeaeae",
-  imageHighlight: "#607d8b",
-  compImgHighlight: "#E6E6E6",
-  jacketColor: "#8eacbb",
-  headerColor: "#34515e",
-  splashBg: "#4f5b62",
-};
-
-export const materialLightTheme = {
-  body: "#ffffff",
-  text: "#4c2b91",
-  expTxtColor: "#000000",
-  highlight: "#E9E3F5",
-  dark: "#1d0c41",
-  secondaryText: "#7d56c2",
-  imageHighlight: "#2b1958",
-  compImgHighlight: "#E1E2E1",
-  jacketColor: "#E1E2E1",
-  headerColor: "#E1E2E1",
-  splashBg: "#7d56c2",
-};
-
-export const materialTealTheme = {
-  body: "#ffffff",
-  text: "#05505E",
-  expTxtColor: "#000000",
-  highlight: "#a1dded",
-  dark: "#07292c",
-  secondaryText: "#05505E",
-  imageHighlight: "#0a343c",
-  compImgHighlight: "#E1E2E1",
-  jacketColor: "#E1E2E1",
-  headerColor: "#E1E2E1",
-  splashBg: "#05505E",
-};
-
-export const chosenTheme = blueTheme;
+  dark: "#000a12
