@@ -5,26 +5,15 @@ import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
 
-const onMouseEnter = (event, color) => {
-  const el = event.target;
-  el.style.backgroundColor = color;
-};
-
-const onMouseOut = (event) => {
-  const el = event.target;
-  el.style.backgroundColor = "transparent";
-};
-
 class Header extends Component {
   render() {
     const theme = this.props.theme;
-    const link = settings.isSplash ? "/#/splash" : "/#/home";
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
         <div>
           <header className="header">
-            <NavLink to={link} tag={Link} className="logo">
+            <NavLink to="/home" tag={Link} className="logo">
               <span style={{ color: theme.text }}> &lt;</span>
               <span className="logo-name" style={{ color: theme.text }}>
                 {greeting.logo_name}
@@ -37,68 +26,28 @@ class Header extends Component {
             </label>
             <ul className="menu" style={{ backgroundColor: theme.body }}>
               <li>
-                <NavLink
-                  to="/home"
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
+                <NavLink to="/home" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="/education"
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
+                <NavLink to="/education" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
                   Education
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="/experience"
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
+                <NavLink to="/experience" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
                   Experience
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="/projects"
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
+                <NavLink to="/projects" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
                   Projects
                 </NavLink>
               </li>
+              {/* OPEN SOURCE TAB REMOVED FROM HERE */}
               <li>
-                <NavLink
-                  to="/opensource"
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact"
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
+                <NavLink to="/contact" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
                   Contact Me
                 </NavLink>
               </li>
