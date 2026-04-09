@@ -12,27 +12,9 @@ import Error404 from "../pages/errors/error404/Error";
 import ResumePage from "../pages/resume/Resume.js";
 
 export default class Main extends Component {
-  componentDidMount() {
-    document.documentElement.style.setProperty(
-      "--scrollbar-color",
-      this.props.theme.imageHighlight
-    );
-  }
-  componentDidUpdate(prevProps) {
-    if (
-      prevProps.theme &&
-      this.props.theme &&
-      prevProps.theme.imageHighlight !== this.props.theme.imageHighlight
-    ) {
-      document.documentElement.style.setProperty(
-        "--scrollbar-color",
-        this.props.theme.imageHighlight
-      );
-    }
-  }
   render() {
     return (
-      <HashRouter basename="/">
+      <HashRouter>
         <Switch>
           <Route
             path="/"
@@ -51,38 +33,19 @@ export default class Main extends Component {
           />
           <Route
             path="/experience"
-            exact
-            render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
-            )}
+            render={(props) => <Experience {...props} theme={this.props.theme} />}
           />
           <Route
             path="/education"
-            render={(props) => (
-              <Education {...props} theme={this.props.theme} />
-            )}
+            render={(props) => <Education {...props} theme={this.props.theme} />}
           />
           <Route
-            path="/opensource"
-            render={(props) => (
-              <Opensource {...props} theme={this.props.theme} />
-            )}
+            path="/projects"
+            render={(props) => <Projects {...props} theme={this.props.theme} />}
           />
           <Route
             path="/contact"
             render={(props) => <Contact {...props} theme={this.props.theme} />}
-          />
-
-          {settings.isSplash && (
-            <Route
-              path="/splash"
-              render={(props) => <Splash {...props} theme={this.props.theme} />}
-            />
-          )}
-
-          <Route
-            path="/projects"
-            render={(props) => <Projects {...props} theme={this.props.theme} />}
           />
           <Route
             path="/resume"
