@@ -8,6 +8,7 @@ class ExperienceCard extends Component {
     const index = this.props.index;
     const totalCards = this.props.totalCards;
     const theme = this.props.theme;
+    
     return (
       <div
         className="experience-list-item"
@@ -76,6 +77,7 @@ class ExperienceCard extends Component {
                       href={experience["company_url"]}
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{ color: theme.text, textDecoration: "underline" }} // Added color here
                     >
                       {experience["company"]}
                     </a>
@@ -106,7 +108,16 @@ class ExperienceCard extends Component {
                 }}
               >
                 <div className="repo-description" />
-                {experience["description"]}
+                {/* MECHANICAL FIX: Wrapped description in a p tag with theme color */}
+                <p 
+                  style={{ 
+                    color: theme.secondaryText, 
+                    margin: 0, 
+                    textAlign: "left" 
+                  }}
+                >
+                  {experience["description"]}
+                </p>
               </div>
             </div>
           </div>
