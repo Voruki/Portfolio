@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, HashRouter, Redirect } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
@@ -21,15 +21,11 @@ export default class Main extends Component {
             exact
             render={(props) =>
               settings.isSplash ? (
-                <Redirect to="/splash" />
+                <Splash {...props} theme={this.props.theme} />
               ) : (
                 <Home {...props} theme={this.props.theme} />
               )
             }
-          />
-          <Route
-            path="/splash"
-            render={(props) => <Splash {...props} theme={this.props.theme} />}
           />
           <Route
             path="/home"
