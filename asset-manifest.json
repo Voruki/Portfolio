@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.fbfd2f66.chunk.css",
-    "main.js": "/static/js/main.5353e111.chunk.js",
-    "main.js.map": "/static/js/main.5353e111.chunk.js.map",
+    "main.js": "/static/js/main.42a459ff.chunk.js",
+    "main.js.map": "/static/js/main.42a459ff.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.2781e2dc.js.map",
-    "static/js/2.ba13b2cf.chunk.js": "/static/js/2.ba13b2cf.chunk.js",
-    "static/js/2.ba13b2cf.chunk.js.map": "/static/js/2.ba13b2cf.chunk.js.map",
+    "static/js/2.3b7b8595.chunk.js": "/static/js/2.3b7b8595.chunk.js",
+    "static/js/2.3b7b8595.chunk.js.map": "/static/js/2.3b7b8595.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.783f84f66d495f89fb5c353c49bbf7cd.js": "/precache-manifest.783f84f66d495f89fb5c353c49bbf7cd.js",
+    "precache-manifest.03e66748ac32dee306b9c9d14d3b6051.js": "/precache-manifest.03e66748ac32dee306b9c9d14d3b6051.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.fbfd2f66.chunk.css.map": "/static/css/main.fbfd2f66.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
@@ -18,6 +18,7 @@
     "static/media/animated_ashutosh.png": "/static/media/animated_ashutosh.eaf02c2d.png",
     "static/media/animated_logo.svg": "/static/media/animated_logo.dcd6dee2.svg",
     "static/media/blogs_image.svg": "/static/media/blogs_image.058eca4c.svg",
+    "static/media/cidb_logo.png": "/static/media/cidb_logo.3b809733.png",
     "static/media/cloud_infrastructure.svg": "/static/media/cloud_infrastructure.cacbc42b.svg",
     "static/media/codeInLogo.png": "/static/media/codeInLogo.fee92c18.png",
     "static/media/contactMail.png": "/static/media/contactMail.5f915405.png",
@@ -36,6 +37,7 @@
     "static/media/googleAssistant.svg": "/static/media/googleAssistant.a6addc3f.svg",
     "static/media/harvard_logo.png": "/static/media/harvard_logo.2180cdba.png",
     "static/media/ibm_logo.png": "/static/media/ibm_logo.d3fccbe1.png",
+    "static/media/iem_logo.png": "/static/media/iem_logo.836f9f24.png",
     "static/media/iiitk_logo.png": "/static/media/iiitk_logo.571a8584.png",
     "static/media/image1.png": "/static/media/image1.5cbdce0a.png",
     "static/media/image2.png": "/static/media/image2.bed34027.png",
@@ -65,8 +67,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2781e2dc.js",
-    "static/js/2.ba13b2cf.chunk.js",
+    "static/js/2.3b7b8595.chunk.js",
     "static/css/main.fbfd2f66.chunk.css",
-    "static/js/main.5353e111.chunk.js"
+    "static/js/main.42a459ff.chunk.js"
   ]
 }
