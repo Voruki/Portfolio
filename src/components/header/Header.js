@@ -4,7 +4,6 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
-import ToggleSwitch from "../toggleSwitch/ToggleSwitch"; // Added the import
 
 class Header extends Component {
   render() {
@@ -70,10 +69,6 @@ class Header extends Component {
                 >
                   Contact Me
                 </NavLink>
-              </li>
-              {/* Added the Toggle Switch here */}
-              <li className="toggle-switch">
-                <ToggleSwitch theme={theme} onToggle={this.props.onToggle} />
               </li>
             </ul>
           </header>
