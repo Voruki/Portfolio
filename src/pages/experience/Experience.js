@@ -4,24 +4,23 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
-import { experience } from "../../portfolio.js"; // This pulls the data from your portfolio file
+import { experience } from "../../portfolio.js"; 
 import { Fade } from "react-reveal";
 
 class Experience extends Component {
   render() {
     const theme = this.props.theme;
-    
-    // Safety Check: This ensures the variable is definitely available within the render scope
     const experienceData = experience;
 
     return (
       <div className="experience-main">
-        <Header theme={theme} />
+        {/* MECHANICAL FIX: Added the onToggle prop here */}
+        <Header theme={theme} onToggle={this.props.onToggle} />
+        
         <div className="basic-experience">
           <Fade bottom duration={2000} distance="40px">
             <div className="experience-heading-div">
               <div className="experience-heading-img-div">
-                {/* Fixed Image Tag */}
                 <img
                   src={require(`../../assets/images/${experienceData["header_image_path"]}`)}
                   alt="Experience Header"
