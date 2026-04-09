@@ -17,14 +17,15 @@ class Projects extends Component {
   render() {
     const theme = this.props.theme;
 
-    // Safety Mapping to prevent ReferenceErrors
     const projectsHeaderData = projectsHeader;
     const publicationsHeaderData = publicationsHeader;
     const publicationsData = publications;
 
     return (
       <div className="projects-main">
-        <Header theme={theme} />
+        {/* MECHANICAL FIX: Added the onToggle prop here */}
+        <Header theme={theme} onToggle={this.props.onToggle} />
+        
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
@@ -58,16 +59,12 @@ class Projects extends Component {
           </Fade>
         </div>
 
-        {/* GitHub Repos Section (Displays nothing since projects.json is empty) */}
         <div className="repo-cards-div-main">
           {ProjectsData.data.map((repo) => {
             return <GithubRepoCard repo={repo} theme={theme} />;
           })}
         </div>
 
-        {/* Removed the "More Projects" Button from here */}
-
-        {/* Special Projects (Publications) Section */}
         {publicationsData.data.length > 0 ? (
           <div className="basic-projects">
             <Fade bottom duration={2000} distance="40px">
