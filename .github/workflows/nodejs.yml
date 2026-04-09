@@ -4,18 +4,30 @@ on:
   push:
     branches: [ master ]
 
+permissions:
+  contents: write
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js 18 # Using 18 is more stable for this older template
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-    - name: Install and Build
-      run: |
-        npm install --legacy-peer-deps
-        npm run build --if-present
-      env:
-        CI: false
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install and Build 🔧
+        run: |
+          npm install --legacy-peer-deps
+          npm run build
+        env:
+          CI: false 
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build
