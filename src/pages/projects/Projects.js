@@ -3,11 +3,9 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import PublicationCard from "../../components/publicationsCard/PublicationCard";
-import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
 import {
-  greeting,
   projectsHeader,
   publicationsHeader,
   publications,
@@ -19,7 +17,7 @@ class Projects extends Component {
   render() {
     const theme = this.props.theme;
 
-    // Safety Mapping: This fixes the "ReferenceError: projectsHeader is not defined"
+    // Safety Mapping to prevent ReferenceErrors
     const projectsHeaderData = projectsHeader;
     const publicationsHeaderData = publicationsHeader;
     const publicationsData = publications;
@@ -31,7 +29,6 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* Fixed Image Tag for image8.png */}
                 <img
                   src={require(`../../assets/images/${projectsHeaderData["avatar_image_path"]}`)}
                   alt="Industrial Projects Header"
@@ -61,20 +58,14 @@ class Projects extends Component {
           </Fade>
         </div>
 
-        {/* This section renders GitHub repos (Now empty based on your projects.json) */}
+        {/* GitHub Repos Section (Displays nothing since projects.json is empty) */}
         <div className="repo-cards-div-main">
           {ProjectsData.data.map((repo) => {
             return <GithubRepoCard repo={repo} theme={theme} />;
           })}
         </div>
 
-        <Button
-          text={"More Projects"}
-          className="project-button"
-          href={greeting.githubProfile}
-          newTab={true}
-          theme={theme}
-        />
+        {/* Removed the "More Projects" Button from here */}
 
         {/* Special Projects (Publications) Section */}
         {publicationsData.data.length > 0 ? (
