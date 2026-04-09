@@ -7,13 +7,21 @@
   margin: 0px auto;
 }
 
+/* NEW: Container to align Logo and Moon icon on the left */
+.logo-and-toggle {
+  display: flex;
+  align-items: center;
+  float: left;
+  gap: 15px; /* Spacing between signature and switch */
+}
+
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  /* background-color: #fff; */
 }
+
 .grey-color {
   color: #868e96;
 }
@@ -21,28 +29,21 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  /* color: black; */
   text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
 }
 
 .header .logo {
-  display: block;
-  float: left;
+  display: flex;
+  align-items: center;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
   line-height: normal;
 }
+
 .header .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
-  padding: 0 10px;
-  /* color: #55198b; */
+  padding: 0 5px;
 }
 
 /* menu */
@@ -57,7 +58,7 @@
   transition: max-height 0.2s ease-out;
 }
 
-/* menu icon */
+/* menu icon (Hamburger) */
 
 .header .menu-icon {
   cursor: pointer;
@@ -123,7 +124,7 @@
   top: 0;
 }
 
-/* 69em = 1104px */
+/* 69em = 1104px (Desktop Mode) */
 
 @media (min-width: 69em) {
   .header li {
@@ -139,5 +140,13 @@
   }
   .header .menu-icon {
     display: none;
+  }
+}
+
+/* Mobile Fix for the Toggle */
+@media (max-width: 69em) {
+  .logo-and-toggle {
+    z-index: 10;
+    position: relative;
   }
 }
