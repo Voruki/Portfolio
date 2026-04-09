@@ -5,8 +5,6 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 
-/* Note: FeelingProud is removed to prioritize your custom vorky.png */
-
 export default function Greeting(props) {
   const theme = props.theme;
   return (
@@ -31,10 +29,11 @@ export default function Greeting(props) {
               </p>
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
+                {/* Updated Button to point to Resume instead of GitHub Stars */}
                 <Button
-                  text="⭐ Star Me On Github"
+                  text="📄 View My Resume"
                   newTab={true}
-                  href={greeting.portfolio_repository}
+                  href={greeting.resumeLink}
                   theme={theme}
                   className="portfolio-repo-btn"
                 />
@@ -48,10 +47,8 @@ export default function Greeting(props) {
               style={{
                 width: "100%",
                 height: "auto",
-                backgroundColor: "transparent", // Ensures no background color shows
-                border: "none",                 // Removes any default borders
-                /* If you want to force extra rounding via code, uncomment the line below */
-                // borderRadius: "20px", 
+                backgroundColor: "transparent",
+                border: "none",
               }}
             />
           </div>
