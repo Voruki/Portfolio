@@ -17,34 +17,44 @@ class LogoLoader extends React.Component {
           y="50%"
           textAnchor="middle"
           dominantBaseline="middle"
-          className="animated-name"
+          className="animated-signature"
           style={{
             fill: "none",
-            stroke: "white", // Forcing white so it's visible on blue
-            strokeWidth: "2",
-            fontSize: "100px",
-            fontWeight: "bold",
-            fontFamily: "Arial, sans-serif",
-            textTransform: "uppercase",
-            letterSpacing: "8px"
+            stroke: "white",
+            strokeWidth: "1.5", // Thinner stroke looks more like a pen
+            fontSize: "120px",
+            fontFamily: "'Brush Script MT', 'Dancing Script', cursive",
+            fontStyle: "italic"
           }}
         >
-          YONG MING
+          Yong Ming
         </text>
         <defs>
           <style
             dangerouslySetInnerHTML={{
               __html: `
-                .animated-name {
-                  stroke-dasharray: 2000;
-                  stroke-dashoffset: 2000;
-                  animation: draw-name 2.5s ease-in-out forwards;
+                .animated-signature {
+                  stroke-dasharray: 2500;
+                  stroke-dashoffset: 2500;
+                  animation: sign-name 3s ease-in-out forwards;
+                  /* This Skew makes it look more like natural handwriting */
+                  transform: skewX(-10deg);
+                  transform-origin: center;
                 }
 
-                @keyframes draw-name {
-                  0% { stroke-dashoffset: 2000; fill: transparent; }
-                  70% { stroke-dashoffset: 0; fill: transparent; }
-                  100% { stroke-dashoffset: 0; fill: white; }
+                @keyframes sign-name {
+                  0% { 
+                    stroke-dashoffset: 2500; 
+                    fill: transparent; 
+                  }
+                  80% { 
+                    stroke-dashoffset: 0; 
+                    fill: transparent; 
+                  }
+                  100% { 
+                    stroke-dashoffset: 0; 
+                    fill: white; 
+                  }
                 }
               `,
             }}
