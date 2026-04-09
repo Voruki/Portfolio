@@ -369,7 +369,7 @@ const contactPageData = {
     region: "SEA",
     postalCode: "",
     streetAddress: "",
-    avatar_image_path: "address_image.svg",
+    avatar_image_path: "photo9.png",
     location_map_link: "https://www.google.com/maps/search/Kuala+Lumpur+Malaysia",
   },
   phoneSection: {
