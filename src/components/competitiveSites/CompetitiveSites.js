@@ -11,7 +11,7 @@ class CompetitiveSites extends React.Component {
             return (
               <OverlayTrigger
                 key={logo.siteName}
-                placement={"top"}
+                placement="top"
                 style={{ marginBottom: "5px" }}
                 overlay={
                   <Tooltip id={`tooltip-top`}>
@@ -25,21 +25,25 @@ class CompetitiveSites extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {logo.iconifyClassname && (
+                    {/* LOGIC FIX: Check if logo_path exists, otherwise use Iconify */}
+                    {logo.logo_path ? (
+                      <img
+                        src={require(`../../assets/images/${logo.logo_path}`)}
+                        alt={logo.siteName}
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          borderRadius: "50%",
+                          objectFit: "contain",
+                        }}
+                      />
+                    ) : (
                       <span
                         className="iconify"
                         data-icon={logo.iconifyClassname}
                         style={logo.style}
                         data-inline="false"
                       ></span>
-                    )}
-                    {!logo.iconifyClassname && logo.imageSrc && (
-                      <img
-                        className="skill-image"
-                        style={logo.style}
-                        src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}
-                        alt={logo.siteName}
-                      />
                     )}
                   </a>
                 </li>
