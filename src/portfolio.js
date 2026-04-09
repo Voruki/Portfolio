@@ -395,7 +395,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "vorky.png", // Updated to match your custom photo
+    profile_image_path: "vorky.png", 
     description:
       "I am open to technical discussions regarding warehouse automation, intralogistics strategy, and 3D industrial simulations. Connect with me on LinkedIn or reach out via email for regional project collaborations.",
   },
