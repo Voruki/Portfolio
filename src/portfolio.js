@@ -79,7 +79,7 @@ const skills = {
           skillName: "ZWCAD",
           fontAwesomeClassname: "simple-icons:zig",
           style: {
-            backgroundColor: "white",
+            backgroundColor: "transparent",
             color: "#D00000",
           },
         },
