@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.722df283.chunk.css",
-    "main.js": "/static/js/main.700c012e.chunk.js",
-    "main.js.map": "/static/js/main.700c012e.chunk.js.map",
+    "main.js": "/static/js/main.af3f0058.chunk.js",
+    "main.js.map": "/static/js/main.af3f0058.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.2781e2dc.js.map",
-    "static/js/2.fc4fae68.chunk.js": "/static/js/2.fc4fae68.chunk.js",
-    "static/js/2.fc4fae68.chunk.js.map": "/static/js/2.fc4fae68.chunk.js.map",
+    "static/js/2.72b6b627.chunk.js": "/static/js/2.72b6b627.chunk.js",
+    "static/js/2.72b6b627.chunk.js.map": "/static/js/2.72b6b627.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9b4b1d38c7e2f8249ea7cf926fb7ba41.js": "/precache-manifest.9b4b1d38c7e2f8249ea7cf926fb7ba41.js",
+    "precache-manifest.30b17cedb51d72999e344f7236986934.js": "/precache-manifest.30b17cedb51d72999e344f7236986934.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.722df283.chunk.css.map": "/static/css/main.722df283.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
@@ -55,6 +55,7 @@
     "static/media/manOnTable.svg": "/static/media/manOnTable.83ac24fb.svg",
     "static/media/muffito_logo.png": "/static/media/muffito_logo.069938a8.png",
     "static/media/nptel_logo.png": "/static/media/nptel_logo.95a12a2b.png",
+    "static/media/photo9.png": "/static/media/photo9.251a2dd3.png",
     "static/media/portfolio.gif": "/static/media/portfolio.414dfbd9.gif",
     "static/media/programmer.svg": "/static/media/programmer.5faf790b.svg",
     "static/media/projects_image.svg": "/static/media/projects_image.b8ba9487.svg",
@@ -70,8 +71,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2781e2dc.js",
-    "static/js/2.fc4fae68.chunk.js",
+    "static/js/2.72b6b627.chunk.js",
     "static/css/main.722df283.chunk.css",
-    "static/js/main.700c012e.chunk.js"
+    "static/js/main.af3f0058.chunk.js"
   ]
 }

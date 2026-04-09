@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ecc4aaab061ab8865b87baca9bcf1c6f",
+    "revision": "e524f0814c47844e69002e02c2fd1b95",
     "url": "/index.html"
   },
   {
-    "revision": "afb246e18846f5764b72",
+    "revision": "20d60900f0cd3773c567",
     "url": "/static/css/main.722df283.chunk.css"
   },
   {
-    "revision": "bc66da7389836dcae7f9",
-    "url": "/static/js/2.fc4fae68.chunk.js"
+    "revision": "8add4f179a6a3c8e93bd",
+    "url": "/static/js/2.72b6b627.chunk.js"
   },
   {
-    "revision": "afb246e18846f5764b72",
-    "url": "/static/js/main.700c012e.chunk.js"
+    "revision": "20d60900f0cd3773c567",
+    "url": "/static/js/main.af3f0058.chunk.js"
   },
   {
     "revision": "f4163cc1361175add5e6",
@@ -278,6 +278,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "95a12a2b8c3149cce2175679755c4b4d",
     "url": "/static/media/nptel_logo.95a12a2b.png"
+  },
+  {
+    "revision": "251a2dd33a454c5df0d62af48a9e876e",
+    "url": "/static/media/photo9.251a2dd3.png"
   },
   {
     "revision": "414dfbd98516b39255a3e22ed90b3f7d",
