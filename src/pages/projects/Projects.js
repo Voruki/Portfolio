@@ -14,7 +14,6 @@ import {
 } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
   render() {
@@ -26,11 +25,19 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <ProjectsImg theme={theme} />
+                {/* MECHANICAL OVERRIDE: 
+                   Pulling your image8.png directly from assets/images 
+                */}
+                <img
+                  src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
+                  alt="Industrial Projects Header"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    borderRadius: "10px",
+                    objectFit: "contain"
+                  }}
+                />
               </div>
               <div className="projects-heading-text-div">
                 <h1
