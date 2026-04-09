@@ -239,9 +239,9 @@ const degrees = {
       alt_name: "UCSI",
       duration: "2018 - 2022",
       descriptions: [
-        "⚡ Achieved First-Class Honours with a CGPA of 3.9/4.0",
-        "⚡ Consecutively awarded the Dean’s Honours List for every semester throughout the 4-year tenure, demonstrating sustained academic excellence",
-        "⚡ Specialized in mechanical systems and engineering design principles",
+        "🥇 Achieved First-Class Honours with a CGPA of 3.9/4.0",
+        "🥇 Consecutively awarded the Dean’s Honours List for every semester throughout the 4-year tenure, demonstrating sustained academic excellence",
+        "🥇 Specialized in mechanical systems and engineering design principles",
       ],
       website_link: "https://www.ucsiuniversity.edu.my/",
     },
