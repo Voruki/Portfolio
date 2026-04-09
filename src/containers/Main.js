@@ -13,6 +13,7 @@ import ResumePage from "../pages/resume/Resume.js";
 
 export default class Main extends Component {
   render() {
+    const theme = this.props.theme;
     return (
       <HashRouter>
         <Switch>
@@ -21,39 +22,43 @@ export default class Main extends Component {
             exact
             render={(props) =>
               settings.isSplash ? (
-                <Splash {...props} theme={this.props.theme} />
+                <Splash {...props} theme={theme} />
               ) : (
-                <Home {...props} theme={this.props.theme} />
+                <Home {...props} theme={theme} />
               )
             }
           />
           <Route
             path="/home"
-            render={(props) => <Home {...props} theme={this.props.theme} />}
+            render={(props) => <Home {...props} theme={theme} />}
           />
           <Route
             path="/experience"
-            render={(props) => <Experience {...props} theme={this.props.theme} />}
+            render={(props) => <Experience {...props} theme={theme} />}
           />
           <Route
             path="/education"
-            render={(props) => <Education {...props} theme={this.props.theme} />}
+            render={(props) => <Education {...props} theme={theme} />}
           />
           <Route
             path="/projects"
-            render={(props) => <Projects {...props} theme={this.props.theme} />}
+            render={(props) => <Projects {...props} theme={theme} />}
+          />
+          <Route
+            path="/opensource"
+            render={(props) => <Opensource {...props} theme={theme} />}
           />
           <Route
             path="/contact"
-            render={(props) => <Contact {...props} theme={this.props.theme} />}
+            render={(props) => <Contact {...props} theme={theme} />}
           />
           <Route
             path="/resume"
-            render={(props) => <ResumePage {...props} theme={this.props.theme} />}
+            render={(props) => <ResumePage {...props} theme={theme} />}
           />
           <Route
             path="*"
-            render={(props) => <Error404 {...props} theme={this.props.theme} />}
+            render={(props) => <Error404 {...props} theme={theme} />}
           />
         </Switch>
       </HashRouter>
