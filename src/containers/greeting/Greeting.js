@@ -29,7 +29,7 @@ export default function Greeting(props) {
               </p>
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
-                {/* Updated Button to point to Resume instead of GitHub Stars */}
+                {/* This button now dynamically links to your Google Drive Resume */}
                 <Button
                   text="📄 View My Resume"
                   newTab={true}
