@@ -18,6 +18,12 @@ import "./Projects.css";
 class Projects extends Component {
   render() {
     const theme = this.props.theme;
+
+    // Safety Mapping: This fixes the "ReferenceError: projectsHeader is not defined"
+    const projectsHeaderData = projectsHeader;
+    const publicationsHeaderData = publicationsHeader;
+    const publicationsData = publications;
+
     return (
       <div className="projects-main">
         <Header theme={theme} />
@@ -25,17 +31,15 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* MECHANICAL OVERRIDE: 
-                   Pulling your image8.png directly from assets/images 
-                */}
+                {/* Fixed Image Tag for image8.png */}
                 <img
-                  src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
+                  src={require(`../../assets/images/${projectsHeaderData["avatar_image_path"]}`)}
                   alt="Industrial Projects Header"
                   style={{
                     width: "100%",
                     height: "auto",
                     borderRadius: "10px",
-                    objectFit: "contain"
+                    objectFit: "contain",
                   }}
                 />
               </div>
@@ -44,23 +48,26 @@ class Projects extends Component {
                   className="projects-heading-text"
                   style={{ color: theme.text }}
                 >
-                  {projectsHeader.title}
+                  {projectsHeaderData.title}
                 </h1>
                 <p
                   className="projects-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  {projectsHeader["description"]}
+                  {projectsHeaderData["description"]}
                 </p>
               </div>
             </div>
           </Fade>
         </div>
+
+        {/* This section renders GitHub repos (Now empty based on your projects.json) */}
         <div className="repo-cards-div-main">
           {ProjectsData.data.map((repo) => {
             return <GithubRepoCard repo={repo} theme={theme} />;
           })}
         </div>
+
         <Button
           text={"More Projects"}
           className="project-button"
@@ -69,8 +76,8 @@ class Projects extends Component {
           theme={theme}
         />
 
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
+        {/* Special Projects (Publications) Section */}
+        {publicationsData.data.length > 0 ? (
           <div className="basic-projects">
             <Fade bottom duration={2000} distance="40px">
               <div className="publications-heading-div">
@@ -79,13 +86,13 @@ class Projects extends Component {
                     className="publications-heading-text"
                     style={{ color: theme.text }}
                   >
-                    {publicationsHeader.title}
+                    {publicationsHeaderData.title}
                   </h1>
                   <p
                     className="projects-header-detail-text subTitle"
                     style={{ color: theme.secondaryText }}
                   >
-                    {publicationsHeader["description"]}
+                    {publicationsHeaderData["description"]}
                   </p>
                 </div>
               </div>
@@ -94,7 +101,7 @@ class Projects extends Component {
         ) : null}
 
         <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
+          {publicationsData.data.map((pub) => {
             return <PublicationCard pub={pub} theme={theme} />;
           })}
         </div>
