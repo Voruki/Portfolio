@@ -18,8 +18,16 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+          # 1. Install specific legacy compatibility layers
           npm install react-is --legacy-peer-deps
+          
+          # 2. Install the Icon library needed for the Sun/Moon toggle
+          npm install react-icons --legacy-peer-deps
+          
+          # 3. Install all other project dependencies
           npm install --legacy-peer-deps
+          
+          # 4. Generate the optimized production build
           npm run build
         env:
           CI: false
