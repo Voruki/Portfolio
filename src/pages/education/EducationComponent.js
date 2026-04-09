@@ -16,15 +16,13 @@ class Education extends Component {
     const theme = this.props.theme;
     return (
       <div className="education-main">
-        <Header theme={this.props.theme} />
+        {/* MECHANICAL FIX: Added onToggle here */}
+        <Header theme={this.props.theme} onToggle={this.props.onToggle} />
+        
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
             <div className="heading-div">
               <div className="heading-img-div">
-                {/* <img
-									src={require("../../assets/images/education.svg")}
-									alt=""
-								/> */}
                 <EducationImg theme={theme} />
               </div>
               <div className="heading-text-div">
@@ -43,7 +41,10 @@ class Education extends Component {
             <Certifications theme={this.props.theme} />
           ) : null}
         </div>
-        <Footer theme={this.props.theme} />
+        
+        {/* MECHANICAL FIX: Added onToggle here */}
+        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
+        
         <TopButton theme={this.props.theme} />
       </div>
     );
