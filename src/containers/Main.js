@@ -13,6 +13,8 @@ import ResumePage from "../pages/resume/Resume.js";
 export default class Main extends Component {
   render() {
     const theme = this.props.theme;
+    const onToggle = this.props.onToggle; // MECHANICAL FIX: Catching the signal from App.js
+
     return (
       <HashRouter>
         <Switch>
@@ -21,40 +23,39 @@ export default class Main extends Component {
             exact
             render={(props) =>
               settings.isSplash ? (
-                <Splash {...props} theme={theme} />
+                <Splash {...props} theme={theme} onToggle={onToggle} />
               ) : (
-                <Home {...props} theme={theme} />
+                <Home {...props} theme={theme} onToggle={onToggle} />
               )
             }
           />
           <Route
             path="/home"
-            render={(props) => <Home {...props} theme={theme} />}
+            render={(props) => <Home {...props} theme={theme} onToggle={onToggle} />}
           />
           <Route
             path="/experience"
-            render={(props) => <Experience {...props} theme={theme} />}
+            render={(props) => <Experience {...props} theme={theme} onToggle={onToggle} />}
           />
           <Route
             path="/education"
-            render={(props) => <Education {...props} theme={theme} />}
+            render={(props) => <Education {...props} theme={theme} onToggle={onToggle} />}
           />
           <Route
             path="/projects"
-            render={(props) => <Projects {...props} theme={theme} />}
+            render={(props) => <Projects {...props} theme={theme} onToggle={onToggle} />}
           />
-          {/* OPEN SOURCE ROUTE REMOVED FROM HERE */}
           <Route
             path="/contact"
-            render={(props) => <Contact {...props} theme={theme} />}
+            render={(props) => <Contact {...props} theme={theme} onToggle={onToggle} />}
           />
           <Route
             path="/resume"
-            render={(props) => <ResumePage {...props} theme={theme} />}
+            render={(props) => <ResumePage {...props} theme={theme} onToggle={onToggle} />}
           />
           <Route
             path="*"
-            render={(props) => <Error404 {...props} theme={theme} />}
+            render={(props) => <Error404 {...props} theme={theme} onToggle={onToggle} />}
           />
         </Switch>
       </HashRouter>
