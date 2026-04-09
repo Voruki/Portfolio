@@ -4,12 +4,16 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
-import { experience } from "../../portfolio.js";
+import { experience } from "../../portfolio.js"; // This pulls the data from your portfolio file
 import { Fade } from "react-reveal";
 
 class Experience extends Component {
   render() {
     const theme = this.props.theme;
+    
+    // Safety Check: This ensures the variable is definitely available within the render scope
+    const experienceData = experience;
+
     return (
       <div className="experience-main">
         <Header theme={theme} />
@@ -17,12 +21,9 @@ class Experience extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="experience-heading-div">
               <div className="experience-heading-img-div">
-                {/* MECHANICAL OVERRIDE: 
-                   We are using your custom image7.png from portfolio.js 
-                   instead of the default ExperienceImg SVG.
-                */}
+                {/* Fixed Image Tag */}
                 <img
-                  src={require(`../../assets/images/${experience["header_image_path"]}`)}
+                  src={require(`../../assets/images/${experienceData["header_image_path"]}`)}
                   alt="Experience Header"
                   style={{
                     width: "100%",
@@ -37,25 +38,25 @@ class Experience extends Component {
                   className="experience-heading-text"
                   style={{ color: theme.text }}
                 >
-                  {experience.title}
+                  {experienceData.title}
                 </h1>
                 <h3
                   className="experience-heading-sub-text"
                   style={{ color: theme.text }}
                 >
-                  {experience["subtitle"]}
+                  {experienceData["subtitle"]}
                 </h3>
                 <p
                   className="experience-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  {experience["description"]}
+                  {experienceData["description"]}
                 </p>
               </div>
             </div>
           </Fade>
         </div>
-        <ExperienceAccordion sections={experience["sections"]} theme={theme} />
+        <ExperienceAccordion sections={experienceData["sections"]} theme={theme} />
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>
