@@ -4,6 +4,7 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
+import ToggleSwitch from "../toggleSwitch/ToggleSwitch"; // Added the import
 
 class Header extends Component {
   render() {
@@ -26,30 +27,53 @@ class Header extends Component {
             </label>
             <ul className="menu" style={{ backgroundColor: theme.body }}>
               <li>
-                <NavLink to="/home" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
+                <NavLink
+                  to="/home"
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/education" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
+                <NavLink
+                  to="/education"
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                >
                   Education
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/experience" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
+                <NavLink
+                  to="/experience"
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                >
                   Experience
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
+                <NavLink
+                  to="/projects"
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                >
                   Projects
                 </NavLink>
               </li>
-              {/* OPEN SOURCE TAB REMOVED FROM HERE */}
               <li>
-                <NavLink to="/contact" activeStyle={{ fontWeight: "bold" }} style={{ color: theme.text }}>
+                <NavLink
+                  to="/contact"
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                >
                   Contact Me
                 </NavLink>
+              </li>
+              {/* Added the Toggle Switch here */}
+              <li className="toggle-switch">
+                <ToggleSwitch theme={theme} onToggle={this.props.onToggle} />
               </li>
             </ul>
           </header>
