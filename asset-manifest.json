@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.fbfd2f66.chunk.css",
-    "main.js": "/static/js/main.804ab493.chunk.js",
-    "main.js.map": "/static/js/main.804ab493.chunk.js.map",
+    "main.js": "/static/js/main.1493deb5.chunk.js",
+    "main.js.map": "/static/js/main.1493deb5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
     "runtime-main.js.map": "/static/js/runtime-main.2781e2dc.js.map",
-    "static/js/2.2f25756f.chunk.js": "/static/js/2.2f25756f.chunk.js",
-    "static/js/2.2f25756f.chunk.js.map": "/static/js/2.2f25756f.chunk.js.map",
+    "static/js/2.c7788ab4.chunk.js": "/static/js/2.c7788ab4.chunk.js",
+    "static/js/2.c7788ab4.chunk.js.map": "/static/js/2.c7788ab4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cbf5cd1e90f213d742dd9cc63eba0a1e.js": "/precache-manifest.cbf5cd1e90f213d742dd9cc63eba0a1e.js",
+    "precache-manifest.72e282aaf282439f2ac42ef8c9f590f5.js": "/precache-manifest.72e282aaf282439f2ac42ef8c9f590f5.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.fbfd2f66.chunk.css.map": "/static/css/main.fbfd2f66.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
@@ -56,12 +56,13 @@
     "static/media/tiktok_logo.png": "/static/media/tiktok_logo.0993e324.png",
     "static/media/ucsi_logo.png": "/static/media/ucsi_logo.0529e5f7.png",
     "static/media/ui_ux_design.svg": "/static/media/ui_ux_design.d6363089.svg",
+    "static/media/vorky.png": "/static/media/vorky.6511d828.png",
     "static/media/your_profile_photo.png": "/static/media/your_profile_photo.5e04d865.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2781e2dc.js",
-    "static/js/2.2f25756f.chunk.js",
+    "static/js/2.c7788ab4.chunk.js",
     "static/css/main.fbfd2f66.chunk.css",
-    "static/js/main.804ab493.chunk.js"
+    "static/js/main.1493deb5.chunk.js"
   ]
 }
