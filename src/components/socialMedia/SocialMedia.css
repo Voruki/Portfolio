@@ -1,8 +1,9 @@
 .social-media-div {
   font-size: 2em;
   display: flex;
-  flex-wrap: wrap; /* Ensures icons stack nicely on smaller screens */
-  justify-content: flex-start; /* Keeps them aligned with your text */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .icon-button i {
@@ -11,7 +12,9 @@
 
 .icon-button {
   margin-bottom: 10px;
-  text-decoration: none; /* Removes any default link underlining */
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
 }
 
 .icon-button i {
@@ -30,17 +33,45 @@
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
-  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+  /* MECHANICAL FIX: Enhanced transitions for the pop effect */
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease-in-out;
 }
 
-/* NOTE: Background colors and hover states are now handled 
-   via Styled Components in SocialMedia.js for better theme sync! 
-*/
+/* Hover Effect: Scale up and add depth */
+.icon-button:hover i {
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* CUSTOM TOOLTIP: Shows the "name" on hover */
+.icon-button::after {
+  content: attr(data-name); /* Pulls name from the JS data-name attribute */
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #333;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.icon-button:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
 
 /* Media Query */
 @media (max-width: 768px) {
   .social-media-div {
-    justify-content: center; /* Centers icons on mobile for better UI */
+    justify-content: center;
     text-align: center;
   }
 }
