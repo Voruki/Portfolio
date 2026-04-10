@@ -4,7 +4,7 @@ import { gql } from "apollo-boost";
 import "./Project.css";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import Button from "../../components/button/Button";
-import { openSource } from "../../portfolio";
+import { openSource, projectsHeader } from "../../portfolio"; // Added projectsHeader
 import { greeting } from "../../portfolio.js";
 
 export default function Projects() {
@@ -58,7 +58,9 @@ export default function Projects() {
       })
       .then((result) => {
         setrepoFunction(result.data.repositoryOwner.pinnedRepositories.edges);
-        console.log(result);
+      })
+      .catch((error) => {
+        console.error("Github API Error:", error);
       });
   }
 
@@ -68,12 +70,24 @@ export default function Projects() {
 
   return (
     <div className="main" id="opensource">
-      <h1 className="project-title">Open Source Projects</h1>
+      <h1 className="project-title">{projectsHeader.title}</h1>
+      
+      {/* MECHANICAL FIX: Split the long description and the NDA disclaimer */}
+      <p className="projects-header-detail-text" style={{ 
+        textAlign: "center", 
+        color: "grey", 
+        maxWidth: "800px", 
+        margin: "10px auto" 
+      }}>
+        {projectsHeader.description}
+      </p>
+
       <div className="repo-cards-div-main">
         {repo.map((v, i) => {
           return <GithubRepoCard repo={v} key={v.node.id} />;
         })}
       </div>
+      
       <Button
         text={"More Projects"}
         className="project-button"
