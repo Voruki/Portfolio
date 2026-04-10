@@ -50,15 +50,15 @@ const socialMediaLinks = [
     backgroundColor: "#E4405F",
   },
   {
-    name: "Blender Market",
-    link: "https://blendermarket.com/creators/superhive",
-    fontAwesomeIcon: "fa-orange", // Custom mapping for Blender
+    name: "Superhive",
+    link: "https://superhivemarket.com/creators/vorky",
+    fontAwesomeIcon: "fa-cube", 
     backgroundColor: "#EA7600",
   },
   {
     name: "Fiverr",
-    link: "https://www.fiverr.com/voruki", // Update with your exact Fiverr handle if different
-    fontAwesomeIcon: "fa-leaf", // Custom mapping for Fiverr
+    link: "https://www.fiverr.com/vorky_ngoh",
+    fontAwesomeIcon: "fa-briefcase",
     backgroundColor: "#1DBF73",
   },
   {
