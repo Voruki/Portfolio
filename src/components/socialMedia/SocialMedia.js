@@ -17,6 +17,11 @@ export default function socialMedia(props) {
   return (
     <div className="social-media-div">
       {socialMediaLinks.map((media, i) => {
+        // Logic to handle specific icon sets
+        // Blender uses 'fab', but Fiverr might need 'fas' or 'fab' depending on your FA version
+        let iconFamily = "fab";
+        if (media.name === "Fiverr") iconFamily = "fas"; // Using a solid leaf if brand icon is missing
+
         return (
           <a
             key={i}
@@ -26,9 +31,8 @@ export default function socialMedia(props) {
             rel="noopener noreferrer"
           >
             <IconWrapper {...media} {...props}>
-              <i className={`fab ${media.fontAwesomeIcon}`}></i>
+              <i className={`${iconFamily} ${media.fontAwesomeIcon}`}></i>
             </IconWrapper>
-            {/* <span></span> */}
           </a>
         );
       })}
