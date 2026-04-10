@@ -330,7 +330,7 @@ const projects = {
 
 const publicationsHeader = {
   title: "Special Projects",
-  description: "A showcase of specialized warehouse design consultations and community-driven engineering initiatives, leveraging high-fidelity 3D simulations and technical throughput modeling.",
+  description: "A showcase of specialized warehouse design consultations and community-driven engineering initiatives, leveraging high-fidelity 3D simulations and technical throughput modeling. Click the projects listed below for more info!",
   avatar_image_path: "projects_image.svg",
 };
 
