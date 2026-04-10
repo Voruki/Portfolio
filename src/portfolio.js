@@ -50,11 +50,23 @@ const socialMediaLinks = [
     backgroundColor: "#E4405F",
   },
   {
+    name: "Blender Market",
+    link: "https://blendermarket.com/creators/superhive",
+    fontAwesomeIcon: "fa-orange", // Custom mapping for Blender
+    backgroundColor: "#EA7600",
+  },
+  {
+    name: "Fiverr",
+    link: "https://www.fiverr.com/voruki", // Update with your exact Fiverr handle if different
+    fontAwesomeIcon: "fa-leaf", // Custom mapping for Fiverr
+    backgroundColor: "#1DBF73",
+  },
+  {
     name: "Gmail",
     link: "mailto:yongming914@gmail.com",
     fontAwesomeIcon: "fa-google",
     backgroundColor: "#D14836",
-  }
+  },
 ];
 
 const skills = {
