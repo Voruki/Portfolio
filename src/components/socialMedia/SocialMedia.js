@@ -18,17 +18,22 @@ export default function socialMedia(props) {
     <div className="social-media-div">
       {socialMediaLinks.map((media, i) => {
         // Logic to handle specific icon sets
-        // Blender uses 'fab', but Fiverr might need 'fas' or 'fab' depending on your FA version
+        // Most brands are in 'fab' (Font Awesome Brands)
+        // Fiverr or custom icons sometimes require 'fas' (Font Awesome Solid)
         let iconFamily = "fab";
-        if (media.name === "Fiverr") iconFamily = "fas"; // Using a solid leaf if brand icon is missing
+        if (media.name === "Fiverr" || media.name === "Superhive") {
+          iconFamily = "fas"; 
+        }
 
         return (
           <a
             key={i}
             href={media.link}
-            className={`icon-button`}
+            className="icon-button"
             target="_blank"
             rel="noopener noreferrer"
+            /* MECHANICAL FIX: Added data-name to trigger the CSS Tooltip */
+            data-name={media.name} 
           >
             <IconWrapper {...media} {...props}>
               <i className={`${iconFamily} ${media.fontAwesomeIcon}`}></i>
