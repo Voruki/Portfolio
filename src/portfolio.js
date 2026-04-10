@@ -319,7 +319,7 @@ const experience = {
 const projectsHeader = {
   title: "Industrial Projects",
   description:
-    "Engineering high-efficiency automation systems for the APAC region. My work focuses on spearheading the technical lifecycle of intralogistics solutions—from conceptual site audits to the deployment of robotic systems like AirRob and T-Sort.",
+    "Architecting high-efficiency automation for the APAC region through the deployment of robotic systems like AirRob and T-Sort. Due to strict NDAs, the majority of recent work cannot be displayed; featured projects are publicly available or pre-approved.",
   avatar_image_path: "image8.png",
 };
 
