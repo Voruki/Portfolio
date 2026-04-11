@@ -2,8 +2,10 @@
   font-size: 2em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  /* MECHANICAL FIX: Middle alignment for the whole row */
+  justify-content: center; 
   position: relative;
+  width: 100%;
 }
 
 .icon-button i {
@@ -24,7 +26,8 @@
   font-size: 1.3rem;
   height: 2.6rem;
   line-height: 2.6rem;
-  margin: 0 5px;
+  /* MECHANICAL FIX: Increased spacing for better centered symmetry */
+  margin: 0 10px; 
   position: relative;
   text-align: center;
   -webkit-user-select: none;
@@ -33,7 +36,6 @@
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
-  /* MECHANICAL FIX: Enhanced transitions for the pop effect */
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease-in-out;
 }
 
@@ -45,7 +47,7 @@
 
 /* CUSTOM TOOLTIP: Shows the "name" on hover */
 .icon-button::after {
-  content: attr(data-name); /* Pulls name from the JS data-name attribute */
+  content: attr(data-name);
   position: absolute;
   bottom: -25px;
   left: 50%;
@@ -68,7 +70,7 @@
   transform: translateX(-50%) translateY(0);
 }
 
-/* Media Query */
+/* Media Query - Stays centered for mobile */
 @media (max-width: 768px) {
   .social-media-div {
     justify-content: center;
