@@ -2,10 +2,15 @@
   font-size: 2em;
   display: flex;
   flex-wrap: wrap;
-  /* MECHANICAL FIX: Middle alignment for the whole row */
-  justify-content: center; 
+  /* Default: Left-aligned for the Home Page */
+  justify-content: flex-start; 
   position: relative;
   width: 100%;
+}
+
+/* MECHANICAL FIX: This class centers the icons only when 'center' prop is passed */
+.social-media-centered {
+  justify-content: center;
 }
 
 .icon-button i {
@@ -26,7 +31,7 @@
   font-size: 1.3rem;
   height: 2.6rem;
   line-height: 2.6rem;
-  /* MECHANICAL FIX: Increased spacing for better centered symmetry */
+  /* Balanced margin for both left and center layouts */
   margin: 0 10px; 
   position: relative;
   text-align: center;
@@ -36,16 +41,17 @@
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
+  /* High-end 'bounce' transition */
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease-in-out;
 }
 
-/* Hover Effect: Scale up and add depth */
+/* Hover Effect: Scale up and add shadow depth */
 .icon-button:hover i {
   transform: scale(1.2);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* CUSTOM TOOLTIP: Shows the "name" on hover */
+/* CUSTOM TOOLTIP: Displayed via 'data-name' attribute from JS */
 .icon-button::after {
   content: attr(data-name);
   position: absolute;
@@ -70,7 +76,7 @@
   transform: translateX(-50%) translateY(0);
 }
 
-/* Media Query - Stays centered for mobile */
+/* Media Query - Forces centering on mobile devices */
 @media (max-width: 768px) {
   .social-media-div {
     justify-content: center;
