@@ -15,14 +15,15 @@ const IconWrapper = styled.span`
 
 export default function socialMedia(props) {
   return (
-    <div className="social-media-div">
+    <div className={`social-media-div ${props.center ? "social-media-centered" : ""}`}>
       {socialMediaLinks.map((media, i) => {
-        // Logic to handle specific icon sets
-        // Most brands are in 'fab' (Font Awesome Brands)
-        // Fiverr or custom icons sometimes require 'fas' (Font Awesome Solid)
+        /* MECHANICAL LOGIC: 
+          Most brands use 'fab' (Font Awesome Brands). 
+          Specific icons like 'cube' or 'briefcase' usually reside in 'fas' (Solid).
+        */
         let iconFamily = "fab";
         if (media.name === "Fiverr" || media.name === "Superhive") {
-          iconFamily = "fas"; 
+          iconFamily = "fas";
         }
 
         return (
@@ -32,8 +33,8 @@ export default function socialMedia(props) {
             className="icon-button"
             target="_blank"
             rel="noopener noreferrer"
-            /* MECHANICAL FIX: Added data-name to trigger the CSS Tooltip */
-            data-name={media.name} 
+            /* This data-name is pulled by the CSS for the hover tooltip */
+            data-name={media.name}
           >
             <IconWrapper {...media} {...props}>
               <i className={`${iconFamily} ${media.fontAwesomeIcon}`}></i>
