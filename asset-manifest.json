@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2d346a0.chunk.css",
+    "main.css": "/static/css/main.e19673cd.chunk.css",
     "main.js": "/static/js/main.54274912.chunk.js",
     "main.js.map": "/static/js/main.54274912.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2781e2dc.js",
@@ -8,9 +8,9 @@
     "static/js/2.d70499e6.chunk.js": "/static/js/2.d70499e6.chunk.js",
     "static/js/2.d70499e6.chunk.js.map": "/static/js/2.d70499e6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b902ada4174ce5709f8b29565ce5cfc9.js": "/precache-manifest.b902ada4174ce5709f8b29565ce5cfc9.js",
+    "precache-manifest.9f4bb7aa8bf01797d7b960d33bdcc714.js": "/precache-manifest.9f4bb7aa8bf01797d7b960d33bdcc714.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b2d346a0.chunk.css.map": "/static/css/main.b2d346a0.chunk.css.map",
+    "static/css/main.e19673cd.chunk.css.map": "/static/css/main.e19673cd.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/Ashutosh_Hathidara_Resume_ML.pdf": "/static/media/Ashutosh_Hathidara_Resume_ML.bad37978.pdf",
     "static/media/address_image.svg": "/static/media/address_image.16559172.svg",
@@ -72,7 +72,7 @@
   "entrypoints": [
     "static/js/runtime-main.2781e2dc.js",
     "static/js/2.d70499e6.chunk.js",
-    "static/css/main.b2d346a0.chunk.css",
+    "static/css/main.e19673cd.chunk.css",
     "static/js/main.54274912.chunk.js"
   ]
 }
