@@ -230,6 +230,14 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "IBM Data Science",
+      subtitle: "IBM Professional Certificate",
+      logo_path: "ibm_logo.png",
+      certificate_link: "https://coursera.org/share/ac002a991b6ca5c009c7c7524100ba7d",
+      alt_name: "IBM",
+      color_code: "#F5F7FA99",
+    },    
+    {
       title: "Google Data Analytics",
       subtitle: "Google Professional Certificate",
       logo_path: "google_logo.png",
