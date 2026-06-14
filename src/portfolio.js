@@ -75,7 +75,7 @@ const skills = {
       title: "Intralogistics Automation",
       fileName: "image1", 
       skills: [
-        "⚙️ Spearheading the first AirRob & T-Sort implementations across Thailand and Malaysia",
+        "⚙️ Spearheading the first AirRob implementations across Thailand, Vietnam and Malaysia",
         "⚙️ Architecting bespoke solutions delivering the average of 40-60% operational efficiency gains",
         "⚙️ Leading technical lifecycles from site audits to finalized system design architecture",
       ],
